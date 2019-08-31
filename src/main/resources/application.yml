@@ -1,0 +1,15 @@
+spring:
+  application.name: config
+  cloud:
+    config.server.git.uri: https://github.com/RecommendationCollection/properties.git
+
+---
+spring:
+  profiles: local
+
+server.port: 18080
+
+eureka:
+  client:
+    region: default
+    serviceUrl.defaultZone: http://localhost:18081/eureka/
