@@ -1,11 +1,11 @@
 spring:
   application.name: config
-  cloud:
-    config.server.git.uri: https://github.com/RecommendationCollection/properties.git
 
 ---
 spring:
   profiles: local
+  cloud:
+    config.server.git.uri: "file:../properties"
 
 server.port: 18080
 
